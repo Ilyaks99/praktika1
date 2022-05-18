@@ -24,7 +24,7 @@
   height: 32px;
 }
 
-.logo__place_header {
+.logo_place_header {
   background-image: url(../images/logo_place_header.svg);
   position: absolute;
   z-index: 10;
@@ -40,7 +40,9 @@
   font-weight: 700;
   font-size: 102px;
   align-self: center;
-
+  z-index: 10;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .header__subtitle {
@@ -48,10 +50,12 @@
   margin-left: 64px;
   bottom: 30px;
   position: absolute;
-  z-index: 10;
+  z-index: 0;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .header__link {
@@ -71,8 +75,8 @@
 
 .header__square-pic {
   background-color: #2f80ed;
-  width: 765px;
-  height: 608px;
+  width: 568px;
+  height: 568px;
   position: absolute;
   align-self: center;
   top: 64px;
@@ -85,7 +89,7 @@
   margin-top: 100px;
 }
 
-.two-colums {
+.two-columns {
   display: flex;
   width: 80%;
   min-width: 784px;
@@ -94,7 +98,7 @@
   margin: auto;
 }
 
-.two-colums__brief {
+.two-columns__brief {
   width: 175px;
   display: block;
   color: #2f80ed;
@@ -103,7 +107,7 @@
   font-weight: normal;
 }
 
-.two-colums__main-text{
+.two-columns__main-text{
   min-width: 784px;
   width: 80%;
   line-height: 34px;
@@ -111,17 +115,17 @@
   font-weight: normal;
 }
 
-.two-colums__paragraph {
+.two-columns__paragraph {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.two-colums__paragraph:nth-of-type(2n) {
+.two-columns__paragraph:nth-of-type(2n) {
   margin-top: 30px;
   margin-bottom: 30px;
 }
 
-.two-colums__span-accent {
+.two-columns__span-accent {
   line-height: 34px;
   font-size: 24px;
   font-weight: 700;
@@ -158,28 +162,31 @@
   justify-content: space-between;
 }
 
-.table_cell {
+.table__cell {
   width: 250px;
   margin-top: 60px;
 }
 
-.table_heading {
+.table__heading {
   line-height: 1.15;
   font-size: 24px;
   font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.table_text {
+.table__text {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
   margin-top: 20px;
+  margin-bottom: 0;
 }
 
 /*Раздел Феймана */
 
 .feynman {
-  height: 890px;
+  min-height: 890px;
   box-sizing: border-box;
   background-color: #f2f2f2;
   position: relative;
@@ -206,7 +213,7 @@
   z-index: 10;
 }
 
-.faynman__link {
+.feynman__link {
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
@@ -218,7 +225,7 @@
   z-index: 10;
 }
 
-.faynman__photography {
+.feynman__photography {
   background-image: url(../images/feynman.png);
   height: 637px;
   width: 867px;
@@ -230,7 +237,7 @@
 
 /* Рахдел Кауфман*/
 .kaufman {
-  background-color: #000000;
+  background-color: #1f1f1f;
   padding: 90px 0;
   overflow: hidden;
   display: flex;
@@ -257,11 +264,11 @@
   z-index: 1;
 }
 
-.table_theme_dark {
+.table__theme_dark {
   z-index: 10;
 }
 
-.table_cell_theme_dark {
+.table__cell_theme_dark {
   width: 200px;
   color: white;
   margin-top: 80px;
@@ -284,14 +291,15 @@
 
 /*"Подвал" сайта*/
 .footer {
-  background-color: #000000;
+  background-color: #1f1f1f;
   min-height: 350px;
   padding: 60px 0 40px;
   justify-content: space-evenly;
   display: flex;
+  box-sizing: border-box;
 }
 
-.footer__colums {
+.footer__columns {
   display: flex;
   width: 90%;
   justify-content: space-around;
@@ -309,7 +317,7 @@
   align-items: flex-start;
 }
 
-.logo__place_footer {
+.logo_place_footer {
   background-image: url(../images/logo_place_footer.svg);
 }
 
@@ -331,7 +339,7 @@
   margin-top: 0;
 }
 
-.footer__column_links {
+.footer__column-links {
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
@@ -341,7 +349,7 @@
   margin-bottom: 16px;
 }
 
-.footer__column_link {
+.footer__column-link {
   color: white;
   text-decoration: none;
   list-style: none;
@@ -354,7 +362,7 @@
   list-style: none;
 }
 
-.footer__social_icon {
+.footer__social-icon {
   height: 16px;
   width: 16px;
   margin-right: 10px;
