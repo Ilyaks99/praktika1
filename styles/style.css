@@ -46,7 +46,7 @@
 
 .header__subtitle {
   width: 388px;
-  margin-left: 64px;
+  left: 64px;
   bottom: 30px;
   position: absolute;
   z-index: 10;
@@ -306,7 +306,7 @@
 .footer__columns {
   display: flex;
   width: 90%;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: row;
 }
 
