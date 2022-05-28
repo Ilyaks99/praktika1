@@ -3,6 +3,6 @@
     margin-bottom: 0;
     display: flex;
     flex-wrap: wrap;
-    align-content: space-between; 
+    align-items: flex-start;
   }
   
