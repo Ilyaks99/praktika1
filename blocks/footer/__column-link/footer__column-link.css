@@ -1,6 +1,7 @@
 .footer__column-link {
     color: white;
+    padding-left: 0;
     text-decoration: none;
-    list-style: none;
+    list-style-type: none;
     justify-content: center;
   }
