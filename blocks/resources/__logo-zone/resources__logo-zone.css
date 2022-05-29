@@ -3,6 +3,5 @@
     margin: 80px auto 0;
     display: flex;
     flex-wrap: wrap;
-    align-content: space-between;
-    justify-content: center;
+    justify-content: space-between;
   }
